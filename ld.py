@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 st.title('Loan Approval Process Automation')
-model=joblib.load('C:/Users/Admin/Downloads/loan_data1.csv')
+model=joblib.load('loan.joblib')
 gender=st.number_input("enter gender Male:0 Female:1")
 married=st.number_input("enter Martial status Married:1 UnMarried:0")
 income=st.number_input("enter applicant income in thousands")
